@@ -1,0 +1,77 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations CSS pures */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-bounce-custom {
+  animation: bounce 2s infinite;
+}
+
+menu
+
+/* Barres de progression animées */
+.skill-bar {
+  width: 0;
+  transition: width 2s ease-in-out 0.5s;
+}
+
+.skill-container:hover .skill-bar {
+  transition-delay: 0s;
+}
+
+.skill-bar-80 {
+  width: 80%;
+}
+.skill-bar-60 {
+  width: 60%;
+}
+.skill-bar-40 {
+  width: 40%;
+}
+.skill-bar-50 {
+  width: 50%;
+}
+.skill-bar-70 {
+  width: 70%;
+}
+
+/* Effet hover sur les cartes */
+.card-hover:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}

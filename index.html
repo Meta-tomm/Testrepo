@@ -1,0 +1,509 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Tom-Mathis Chapuis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/fa229a08bb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "oklch(74% 0.238 322.16)",
+              secondary: "oklch(83.3% 0.145 321.434)",
+              accent: "oklch(37.2% 0.044 257.287)",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+    <body class="font-inter bg-gray-50 text-gray-800">
+      <!-- header -->
+
+
+      <header
+        class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50"
+      >
+        <nav class="container mx-auto px-6 py-4">
+          <div class="flex items-center justify-between">
+
+
+
+            <!-- ptit logo -->
+            <div class="text-2xl font-bold text-primary animate-fadeInUp">
+              Tom.medicdev
+            </div>
+
+            <!-- menu d'acc -->
+            <div class="hidden md:flex space-x-8 animate-fadeInUp ">
+              <a
+                href="#accueil"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >About me</a
+              >
+              <a
+                href="#skills"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Skills</a
+              >
+              <a
+                href="#projects"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Projects</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Contact</a
+              >
+            </div>
+
+       
+
+
+
+            
+            <!-- menu du tel -->
+            <div class="md:hidden">
+
+
+
+<nav class="bg-gray-50 dark:bg-gray-700">
+    <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="flex items-center">
+            <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                <li>
+                                <a
+                href="#accueil"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Home</a>
+                </li>
+
+                <li>
+                      <a
+                href="#about"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >About me</a
+              >
+                </li>
+                <li>
+             <a
+                href="#skills"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Skills</a
+              >
+                </li>
+                <li>
+               <a
+                href="#projects"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Projects</a
+              >
+                </li>
+                          <li>
+           <a
+                href="#contact"
+                class="text-gray-600 hover:text-primary transition-colors duration-300"
+                >Contact</a
+              >
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+            </div>
+          </div>
+        </nav>
+        
+      </header>
+
+      <!-- ACCEUIL SECTION -->
+      <section
+        id="accueil"
+        class="min-h-screen flex items-center bg-gradient-to-br from-pink-50 to-fushia-100 pt-20"
+      >
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+           
+            <div class="lg:w-1/2 animate-slideInLeft">
+              <h1 class="text-4xl lg:text-6xl font-bold mb-6">
+                Hello, i am 
+                <span class="text-primary block">Tom-Mathis</span>
+              </h1>
+              <p class="text-xl text-gray-600 mb-8 animate-fadeInUp delay-200">
+                Passionate student developer focused on creating new fonction for medical software
+              </p>
+              <p class="text-lg text-gray-500 mb-8 animate-fadeInUp delay-400">
+               Currently enrolled in a pre-MSc program at Epitech, I am developing my skills in full-stack development.
+              </p>
+
+              <div
+                class="flex flex-col sm:flex-row gap-4 animate-fadeInUp delay-600"
+              >
+                <a
+                  href="#projects"
+                  class="bg-primary text-white px-8 py-3 rounded-lg hover:pink-150 transition-all duration-300 text-center transform hover:scale-105"
+                >
+                 Look my project
+                </a>
+                <a
+                  href="#contact"
+                  class="border-2 border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-all duration-300 text-center"
+                >
+                  Contact me
+                </a>
+             </div>
+        </div>
+
+            <!-- ma tronche -->
+            <div class="lg:w-1/2 flex justify-center animate-slideInRight">
+            <div class="relative">
+                <div class="">
+                    <img class="rounded-full" src="image /Tom Mathis Chapuis.jpg" alt="">
+                 
+                </div>
+                <div
+                  class="absolute -bottom-4 -right-4 bg-accent text-white p-4 rounded-full animate-bounce-custom"
+                >
+                  <i class="fas fa-code text-2xl"></i>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me sect -->
+      <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 animate-fadeInUp">
+              About me
+            </h2>
+            <p class="text-gray-600 animate-fadeInUp delay-200">
+              Look my course and my passion
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- text -->
+
+
+
+            <div class="animate-slideInLeft">
+              <p class="text-lg text-gray-600 mb-6">
+                 My name is Tom-Mathis Chapuis, I’m 23 years old, and I’m currently a pre-Master of Science student at Epitech. After starting my career in accounting, I decided to switch paths and pursue a career in IT — a field that truly excites me and where I aim to build my professional future.
+              </p>
+              <p class="text-lg text-gray-600 mb-6">
+                What draws me to development is the ability to turn ideas into real, functional solutions. I have a particular interest in databases and their central role in web applications.
+              </p>
+              <p class="text-lg text-gray-600 mb-6">
+                Outside of my studies, I enjoy taking on challenges through hiking and aquathlon. I'm also passionate about video games, which help fuel my creativity and strategic thinking.
+            </div>
+
+            <!-- diplome et ecole -->
+            <div class="animate-slideInRight">
+              <h3 class="text-2xl font-semibold mb-8 text-primary">
+                Mon parcours
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4 animate-fadeInUp">
+                  <div class="bg-primary text-white p-3 rounded-full">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Epitech</h4>
+                    <p class="text-gray-600">Pré-Master of Science</p>
+                    <p class="text-sm text-gray-500">2025-2028</p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start space-x-4 animate-fadeInUp delay-200"
+                >
+                  <div class="bg-secondary text-white p-3 rounded-full">
+                    <i class="fas fa-university"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">ESBANQUE</h4>
+                    <p class="text-gray-600">Bachelor Banque Assurance</p>
+                    <p class="text-sm text-gray-500">2023-2024</p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start space-x-4 animate-fadeInUp delay-400"
+                >
+                  <div class="bg-accent text-white p-3 rounded-full">
+                    <i class="fas fa-school"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Les Chartreux</h4>
+                    <p class="text-gray-600">BTS Comptabilité et Gestion</p>
+                    <p class="text-sm text-gray-500">2020-2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 animate-fadeInUp">
+              My skills
+            </h2>
+            <p class="text-gray-600 animate-fadeInUp delay-200">
+              Tech that i learn
+            </p>
+          </div>
+        <div></div>
+
+         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Frontend -->
+            <div
+              class="bg-white p-8 rounded-xl shadow-sm card-hover skill-container"
+            >
+              <div class="text-primary text-3xl mb-4 animate-fadeInUp">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-5">Frontend</h3>
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between mb-2">
+                <span>HTML/CSS</span>
+                    <span class="text-sm text-gray-600">80%</span>
+                  </div>
+                  <div class="bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-primary h-2 rounded-full skill-bar skill-bar-80"
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between mb-2">
+                <span>SCSS</span>
+                    <span class="text-sm text-gray-600">60%</span>
+                  </div>
+                <div class="bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-primary h-2 rounded-full skill-bar skill-bar-60"
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span>JavaScript</span>
+                    <span class="text-sm text-gray-600">40%</span>
+                  </div>
+                  <div class="bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-primary h-2 rounded-full skill-bar skill-bar-40"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend -->
+             <div
+              class="bg-white p-8 rounded-xl shadow-sm card-hover skill-container"
+            >
+                <div class="text-primary text-3xl mb-4 animate-fadeInUp">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="space-y-4">
+              <h3 class="text-xl font-semibold mb-5">Backend</h3>
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span>Python</span>
+                    <span class="text-sm text-gray-600">70%</span>
+                  </div>
+                  <div class="bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-primary h-2 rounded-full skill-bar skill-bar-70"
+                    ></div>
+                  </div>
+                </div>
+                
+                <div>
+                                  <div class="flex justify-between mb-2">
+                    <span>C#</span>
+                    <span class="text-sm text-gray-600">60%</span>
+                  </div>
+                  <div class="bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-primary h-2 rounded-full skill-bar skill-bar-60"
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                                  <div class="flex justify-between mb-2">
+                    <span>Data base</span>
+                    <span class="text-sm text-gray-600">50%</span>
+                  </div>
+                  <div class="bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-primary h-2 rounded-full skill-bar skill-bar-50"
+                    ></div>
+                  </div>
+                </div>
+                </div>
+
+
+
+
+
+
+            </div>
+       
+ 
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 animate-fadeInUp">
+               My project
+            </h2>
+            <p class="text-gray-600 animate-fadeInUp delay-200">
+              Look at my first project !
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-1 gap-8">
+            <!-- project -->
+            <div
+              class="bg-gray-50 rounded-xl overflow-hidden card-hover animate-fadeInUp"
+            >
+              <div
+                class="h-48 flex items-center justify-center"
+              >
+                <img class="object-cover w-full h-full"  src="image /Screenshot from 2025-09-28 09-27-15.png" alt="">
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-sm text-primary font-semibold  px-3 py-1 rounded-full"
+                  >HTML/CSS</span
+                >
+                <h3 class="text-xl font-semibold mt-4 mb-3">Portfolio WebSite </h3>
+                <p class="text-gray-600 mb-4">
+                My first website design to show some of my skill in front-end dev
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="bg-secondary text-black px-3 py-1 rounded-full text-sm"
+                    >HTML</span
+                  >
+                  <span
+                    class="bg-secondary text-black px-3 py-1 rounded-full text-sm"
+                    >CSS</span
+                  >
+                  <span
+                    class="bg-secondary text-black px-3 py-1 rounded-full text-sm"
+                    >Tailwind</span
+                  >
+                </div>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://github.com/Meta-tomm"
+                    target="_blank"
+                    class="text-primary hover:text-blue-600 flex items-center transition-colors duration-300"
+                  >
+                    <i class="fab fa-github mr-2"></i>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 animate-fadeInUp">
+              Stay in contact
+            </h2>
+
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+              <a
+                href="mailto:tommathischapuis@gmail.com"
+                class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 card-hover animate-fadeInUp"
+              >
+                <i
+                  class="fas fa-envelope text-4xl text-primary mb-4 animate-float"
+                ></i>
+                <h3 class="text-xl font-semibold mb-2">Mail</h3>
+                <p class="text-gray-300">tommathischapuis@gmail.com</p>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/tom-place-6b344830a"
+              
+                class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 card-hover animate-fadeInUp delay-400"
+              >
+                <i
+                  class="fab fa-linkedin text-4xl text-primary mb-4 animate-float"
+                ></i>
+                <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+                <p class="text-gray-300">My profil</p>
+              </a>
+
+              <a
+                href="https://github.com/Meta-tomm"
+              
+                class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 card-hover animate-fadeInUp delay-400"
+              >
+                <i
+                  class="fab fa-github text-4xl text-primary mb-4 animate-float"
+                ></i>
+                <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                <p class="text-gray-300">My project</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </body>
+  </head>
+</html>
